@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>SPA-программа «Релакс» | Лаванда SPA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<section class="spa-hero">
+  <img src="/img/services/spa/spa-program.jpg" alt="SPA программа Релакс">
+  <div class="spa-hero-overlay">
+    <h1>SPA-программа «Релакс»</h1>
+    <p>Глубокое расслабление и забота о себе — только для женщин</p>
+  </div>
+</section>
+
+<nav class="breadcrumbs">
+  <a href="/">Главная</a>
+  <span>→</span>
+  <a href="/services/services.html">Услуги</a>
+  <span>→</span>
+  <a href="/services/spa-programs.html">SPA-программы</a>
+  <span>→</span>
+  <span>Релакс</span>
+</nav>
+
+<section class="spa-content container">
+
+  <div class="spa-description">
+    <p>
+      SPA-программа «Релакс» — это время, когда вы полностью отключаетесь от суеты и забот. Мягкое прикосновение, спокойная атмосфера и внимание
+      к каждой детали помогают восстановить внутренний баланс и почувствовать
+      лёгкость в теле.
+    </p>
+
+    <p>
+      Программа идеально подойдёт, если вы устали, чувствуете напряжение
+      или просто хотите подарить себе качественный отдых в уютной,
+      доверительной обстановке.
+    </p>
+  </div>
+
+  <div class="spa-includes">
+    <h2>В программу входит</h2>
+    <ul>
+      <li>Парение в кедровой бочке</li>
+      <li>Скрабирование</li>
+      <li>Массаж тела</li>
+      <li>Обёртывание</li>
+      <li>Массаж лица</li>
+      <li>Чайный комплимент</li>
+    </ul>
+  </div>
+
+  <div class="spa-info">
+    <div class="spa-info-item">
+      <strong>Продолжительность:</strong>
+      <span>3 часа</span>
+    </div>
+    <div class="spa-info-item">
+      <strong>Стоимость:</strong>
+      <span>5000 ₽</span>
+    </div>
+  </div>
+
+  <div class="spa-action">
+    <button onclick="orderSpa()">
+      Записаться на программу
+    </button>
+    <p class="spa-note">
+      Студия релакса ЛАВАНДА — пространство только для женщин
+    </p>
+  </div>
+
+</section>
+
+<script>
+  function orderSpa() {
+    const text = 'Здравствуйте! Хочу записаться на SPA-программу «Релакс»';
+    window.open(`https://wa.me/79298380501?text=${encodeURIComponent(text)}`, '_blank');
+  }
+</script>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <div class="footer-logo">Лаванда, студия релакса</div>
+      <p class="footer-tagline">
+        Красота и здоровье ручной работы
+      </p>
+    </div>
+
+    <div class="footer-contacts">
+      <a href="tel:+79298380501" class="footer-link">
+        📞 +7 929 838 0501
+      </a>
+
+      <a 
+        href="https://yandex.ru/maps/?mode=routes&rtext=~Тимашевск, улица Ковалёва, дом 129А"
+        target="_blank"
+        class="footer-link">
+        📍 г. Тимашевск, улица Ковалёва, дом 129А
+      </a>
+
+      <span class="footer-time">
+        ⏰ Ежедневно с 08:00 до 20:00
+      </span>
+    </div>
+
+    <div class="footer-action">
+      <a href="/contacts.html" class="footer-button">
+        Записаться на сеанс
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 ЛАВАНДА студия релакса · Все права защищены
+  </div>
+</footer>
+
+</body>
+</html>
+

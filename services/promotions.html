@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Акции | Lavanda SPA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<section class="page-header">
+  <h1>Акции и специальные предложения</h1>
+  <p>Побалуйте себя выгодно — только для женщин</p>
+</section>
+
+<section class="promotions">
+  <div class="container promotions-grid">
+
+    <div class="promo-card">
+      <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" alt="">
+      <div class="promo-content">
+        <span class="promo-badge">до конца недели</span>
+        <h3>Спа-день со скидкой</h3>
+        <p>Комплексная SPA-программа для глубокого расслабления</p>
+        <button onclick="orderPromo('Спа-день со скидкой')">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+    <div class="promo-card">
+      <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35" alt="">
+      <div class="promo-content">
+        <span class="promo-badge">-20%</span>
+        <h3>Массаж тела</h3>
+        <p>Идеально для восстановления и снятия напряжения</p>
+        <button onclick="orderPromo('Массаж тела -20%')">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+    <div class="promo-card">
+      <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b" alt="">
+      <div class="promo-content">
+        <span class="promo-badge">новинка</span>
+        <h3>Приведи подругу</h3>
+        <p>Вдвоём — приятнее. Бонусы для обеих</p>
+        <button onclick="orderPromo('Акция Приведи подругу')">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function orderPromo(name) {
+    const text = `Здравствуйте! Хочу записаться по акции: ${name}`;
+    window.open(`https://wa.me/79298380501?text=${encodeURIComponent(text)}`, '_blank');
+  }
+</script>
+
+</body>
+</html>

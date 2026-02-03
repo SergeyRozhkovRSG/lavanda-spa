@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>SPA-программа | Lavanda SPA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<section class="spa-hero">
+  <!-- МЕНЯЕМ КАРТИНКУ -->
+  <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" alt="">
+  <div class="spa-hero-overlay">
+    <!-- МЕНЯЕМ НАЗВАНИЕ -->
+    <h1>SPA-программа «Название»</h1>
+    <p>Глубокое расслабление и забота о себе — только для женщин</p>
+  </div>
+</section>
+
+<nav class="breadcrumbs">
+  <a href="/">Главная</a>
+  <span>→</span>
+  <a href="/services/services.html">Услуги</a>
+  <span>→</span>
+  <a href="/services/spa-programs.html">SPA-программы</a>
+  <span>→</span>
+  <span>Название</span>
+</nav>
+
+<section class="spa-content container">
+
+  <div class="spa-description">
+    <!-- МЕНЯЕМ ТЕКСТ -->
+    <p>
+      Описание SPA-программы. Продающий, мягкий, уютный текст.
+    </p>
+  </div>
+
+  <div class="spa-includes">
+    <h2>В программу входит</h2>
+    <ul>
+      <!-- МЕНЯЕМ СПИСОК -->
+      <li>Элемент программы</li>
+      <li>Элемент программы</li>
+      <li>Чайный комплимент</li>
+    </ul>
+  </div>
+
+  <div class="spa-info">
+    <div class="spa-info-item">
+      <strong>Продолжительность:</strong>
+      <span>—</span>
+    </div>
+    <div class="spa-info-item">
+      <strong>Стоимость:</strong>
+      <span>— ₽</span>
+    </div>
+  </div>
+
+  <div class="spa-action">
+    <button onclick="orderSpa()">
+      Записаться на программу
+    </button>
+    <p class="spa-note">
+      Пространство заботы и доверия — только для женщин
+    </p>
+  </div>
+
+</section>
+
+<script>
+  function orderSpa() {
+    const text = 'Здравствуйте! Хочу записаться на SPA-программу';
+    window.open(`https://wa.me/79298380501?text=${encodeURIComponent(text)}`, '_blank');
+  }
+</script>
+
+</body>
+</html>

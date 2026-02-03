@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Подарочные сертификаты | Lavanda SPA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<section class="page-header">
+  <h1>Подарочные сертификаты</h1>
+  <p>Идеальный подарок для отдыха и перезагрузки</p>
+</section>
+
+<section class="certificates">
+  <div class="container certificates-grid">
+
+    <div class="certificate-card" onclick="orderCert('Сертификат на 60 минут')">
+      <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883" alt="">
+      <div class="certificate-info">
+        <h3>60 минут</h3>
+        <p>Расслабляющий массаж или SPA-уход</p>
+      </div>
+    </div>
+
+    <div class="certificate-card" onclick="orderCert('Сертификат на 90 минут')">
+      <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569" alt="">
+      <div class="certificate-info">
+        <h3>90 минут</h3>
+        <p>Глубокое расслабление и восстановление</p>
+      </div>
+    </div>
+
+    <div class="certificate-card" onclick="orderCert('VIP сертификат')">
+      <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9" alt="">
+      <div class="certificate-info">
+        <h3>VIP</h3>
+        <p>Премиум программа для особого случая</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function orderCert(name) {
+    const text = `Здравствуйте! Хочу приобрести ${name}`;
+    window.open(`https://wa.me/79298380501?text=${encodeURIComponent(text)}`, '_blank');
+  }
+</script>
+
+</body>
+</html>
