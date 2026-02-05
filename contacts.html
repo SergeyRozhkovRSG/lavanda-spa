@@ -98,32 +98,7 @@
   </div>
 </div>
 
-<script>
-function openBooking(button) {
-const service =
-button?.dataset.service;
-
-
-const message = `Хочу записаться на ${service}`;
-const encoded = encodeURIComponent(message);
-
-
-document.getElementById('waLink').href =
-`https://wa.me/79298380501?text=${encoded}`;
-
-
-document.getElementById('tgLink').href =
-`https://t.me/Luiza_fox_foxy?text=${encoded}`;
-
-
-document.getElementById('bookingModal').style.display = 'flex';
-}
-
-
-function closeBooking() {
-document.getElementById('bookingModal').style.display = 'none';
-}
-</script>
+<script src="/js/main.js" defer></script>
 
 
 <footer class="site-footer">
