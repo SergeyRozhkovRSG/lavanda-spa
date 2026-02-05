@@ -11,6 +11,7 @@ window.openBooking = function openBooking(button) {
 
   const waLink = document.getElementById('waLink');
   const tgLink = document.getElementById('tgLink');
+  const maxLink = document.getElementById('maxLink');
   const modal = document.getElementById('bookingModal');
 
   if (waLink) {
@@ -19,6 +20,10 @@ window.openBooking = function openBooking(button) {
 
   if (tgLink) {
     tgLink.href = `https://t.me/Luiza_fox_foxy?text=${encoded}`;
+  }
+
+  if (maxLink) {
+    maxLink.href = 'https://max.ru/u/f9LHodD0cOLDzA9kGm0ofpRMETIX8HJIJnSapUncv5Jq4c7Uwdf5_XCrf_E';
   }
 
   if (modal) {
