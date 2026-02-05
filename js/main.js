@@ -23,7 +23,7 @@ window.openBooking = function openBooking(button) {
   }
 
   if (maxLink) {
-    maxLink.href = `https://max.ru/79298380501?text=${encoded}`;
+    maxLink.href = 'https://max.ru/u/f9LHodD0cOLDzA9kGm0ofpRMETIX8HJIJnSapUncv5Jq4c7Uwdf5_XCrf_E';
   }
 
   if (modal) {
