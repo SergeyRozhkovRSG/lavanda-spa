@@ -56,8 +56,12 @@
     </p>
 
     <div class="hero-actions">
-      <a href="tel:+79298380501" class="btn primary">Позвонить</a>
-      <a href="#form" class="btn outline">Записаться</a>
+      <button type="button" class="btn primary" data-service="процедуру" onclick="openBooking(this)">
+        Позвонить
+      </button>
+      <button type="button" class="btn outline" data-service="процедуру" onclick="openBooking(this)">
+        Записаться
+      </button>
     </div>
   </div>
 </section>
@@ -343,26 +347,7 @@
   Записаться
 </button>
 
-<!-- МОДАЛЬНОЕ ОКНО -->
-<div class="booking-modal" id="bookingModal">
-  <div class="booking-modal-content">
-
-    <button class="booking-close" onclick="closeBooking()">×</button>
-
-    <h3>Записаться на процедуру</h3>
-    <p>Выберите удобный способ связи</p>
-
-    <a 
-      href="tel:+79298380501"
-      class="booking-option"
-    >📞 Позвонить</a>
-
-    <a href="#" class="booking-option whatsapp" id="waLink">💬 WhatsApp</a>
-    <a href="#" class="booking-option telegram" id="tgLink">✈️ Telegram</a>
-
-  </div>
-</div>
-
+<script src="/js/booking-modal.js" defer></script>
 <script src="/js/main.js" defer></script>
 
 

@@ -3,6 +3,9 @@
   --lavender: #b8a1c7;
   --bg: #faf8f6;
   --text: #2e2e2e;
+  --cta-bg: #b59bcf;
+  --cta-bg-hover: #9f85bd;
+  --cta-color: #fff;
 }
 
 * {
@@ -113,16 +116,25 @@ h1, h2, h3 {
   border-radius: 30px;
   text-decoration: none;
   font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn.primary {
-  background: var(--lavender);
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-color);
+  border: none;
 }
 
 .btn.outline {
-  border: 1px solid var(--lavender);
-  color: var(--lavender);
+  background: var(--cta-bg);
+  color: var(--cta-color);
+  border: none;
+}
+
+.btn:hover {
+  background: var(--cta-bg-hover);
+  transform: translateY(-2px);
 }
 
 /* ===== SECTIONS ===== */
@@ -422,12 +434,12 @@ section {
   padding: 16px 28px;
   font-size: 16px;
   border-radius: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn-large:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: var(--cta-bg-hover);
+  transform: translateY(-2px);
 }
 
 /* ===== ADAPTIVE ===== */
@@ -547,8 +559,8 @@ section {
 }
 
 .promo-content button {
-  background: #b59bcf;
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-color);
   border: none;
   padding: 12px 22px;
   border-radius: 30px;
@@ -557,7 +569,7 @@ section {
 }
 
 .promo-content button:hover {
-  background: #9f85bd;
+  background: var(--cta-bg-hover);
   transform: translateY(-2px);
 }
 
@@ -662,8 +674,8 @@ section {
 }
 
 .spa-action button {
-  background: #b59bcf;
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-color);
   border: none;
   padding: 16px 34px;
   border-radius: 40px;
@@ -673,7 +685,7 @@ section {
 }
 
 .spa-action button:hover {
-  background: #9f85bd;
+  background: var(--cta-bg-hover);
   transform: translateY(-2px);
 }
 
@@ -745,19 +757,27 @@ section {
 }
 
 .btn-primary {
-  background: #b59bcf;
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-color);
   padding: 14px 28px;
   border-radius: 40px;
   text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn-secondary {
-  border: 1px solid #b59bcf;
-  color: #b59bcf;
+  background: var(--cta-bg);
+  color: var(--cta-color);
   padding: 14px 28px;
   border-radius: 40px;
   text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background: var(--cta-bg-hover);
+  transform: translateY(-2px);
 }
 
 .contacts-form form {
@@ -775,13 +795,19 @@ section {
 }
 
 .contacts-form button {
-  background: #b59bcf;
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-color);
   border: none;
   padding: 14px;
   border-radius: 40px;
   font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contacts-form button:hover {
+  background: var(--cta-bg-hover);
+  transform: translateY(-2px);
 }
 
 .form-note {
@@ -828,8 +854,8 @@ section {
 .route-button {
   display: inline-block;
   margin-top: 24px;
-  background: #b59bcf;
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-color);
   padding: 14px 30px;
   border-radius: 40px;
   font-size: 16px;
@@ -838,7 +864,7 @@ section {
 }
 
 .route-button:hover {
-  background: #9f85bd;
+  background: var(--cta-bg-hover);
   transform: translateY(-2px);
 }
 .contact-note {
@@ -902,8 +928,8 @@ section {
 }
 
 .footer-button {
-  background: #b59bcf;
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-color);
   padding: 14px 30px;
   border-radius: 40px;
   font-size: 16px;
@@ -912,7 +938,7 @@ section {
 }
 
 .footer-button:hover {
-  background: #9f85bd;
+  background: var(--cta-bg-hover);
   transform: translateY(-2px);
 }
 
@@ -936,8 +962,8 @@ section {
 /* ===== BOOKING MODAL ===== */
 
 .book-btn {
-  background: #b59bcf;
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-color);
   border: none;
   padding: 16px 36px;
   border-radius: 40px;
@@ -947,7 +973,7 @@ section {
 }
 
 .book-btn:hover {
-  background: #9f85bd;
+  background: var(--cta-bg-hover);
   transform: translateY(-2px);
 }
 
@@ -1151,17 +1177,18 @@ section {
 .faq-book-btn {
   margin: 16px 0 28px;
   padding: 12px 26px;
-  background: #c9a16e;
+  background: var(--cta-bg);
   border: none;
   border-radius: 30px;
-  color: #fff;
+  color: var(--cta-color);
   font-size: 15px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .faq-book-btn:hover {
-  background: #b38c5d;
+  background: var(--cta-bg-hover);
+  transform: translateY(-2px);
 }
 
 /* Мобильная версия */

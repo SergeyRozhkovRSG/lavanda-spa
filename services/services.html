@@ -18,7 +18,9 @@
     <div class="logo">
       <a href="../index.html" style="text-decoration:none;color:inherit;">Лаванда</a>
     </div>
-    <a href="tel:+79298380501" class="btn primary">Позвонить</a>
+    <button type="button" class="btn primary" data-service="услугу" onclick="openBooking(this)">
+      Позвонить
+    </button>
   </div>
 </header>
 
@@ -79,8 +81,6 @@
   </div>
 </section>
 
-</script>
-
 <footer class="site-footer">
   <div class="footer-inner">
 
@@ -109,7 +109,7 @@
     </div>
 
     <div class="footer-action">
-      <a href="/contacts.html" class="footer-button">
+      <a href="#" class="footer-button" onclick="openBooking(this); return false;">
         Записаться на сеанс
       </a>
     </div>
@@ -120,6 +120,9 @@
     © 2026 ЛАВАНДА студия релакса · Все права защищены
   </div>
 </footer>
+
+<script src="/js/booking-modal.js" defer></script>
+<script src="/js/main.js" defer></script>
 
 </body>
 </html>
