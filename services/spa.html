@@ -23,7 +23,9 @@
       <a href="../index.html" style="text-decoration:none;color:inherit;">Лаванда</a>
     </div>
 
-    <a href="tel:+79298380501" class="btn primary">Позвонить</a>
+    <button type="button" class="btn primary" data-service="SPA-программу" onclick="openBooking(this)">
+      Позвонить
+    </button>
   </div>
 </header>
 
@@ -100,7 +102,9 @@
 <!-- ===== CTA ===== -->
 <section class="service-cta">
   <div class="container">
-    <a href="tel:+79298380501" class="btn primary large">Записаться по телефону</a>
+    <button type="button" class="btn primary large" data-service="SPA-программу" onclick="openBooking(this)">
+      Записаться
+    </button>
   </div>
 </section>
 
@@ -110,6 +114,9 @@
     <p class="small">Студия релакса «Лаванда» · Только для женщин</p>
   </div>
 </footer>
+
+<script src="/js/booking-modal.js" defer></script>
+<script src="/js/main.js" defer></script>
 
 </body>
 </html>

@@ -22,7 +22,7 @@
         <span class="promo-badge">до конца недели</span>
         <h3>Спа-день со скидкой</h3>
         <p>Комплексная SPA-программа для глубокого расслабления</p>
-        <button onclick="orderPromo('Спа-день со скидкой')">
+        <button type="button" data-service="Спа-день со скидкой" onclick="openBooking(this)">
           Записаться
         </button>
       </div>
@@ -34,7 +34,7 @@
         <span class="promo-badge">-20%</span>
         <h3>Массаж тела</h3>
         <p>Идеально для восстановления и снятия напряжения</p>
-        <button onclick="orderPromo('Массаж тела -20%')">
+        <button type="button" data-service="Массаж тела -20%" onclick="openBooking(this)">
           Записаться
         </button>
       </div>
@@ -46,7 +46,7 @@
         <span class="promo-badge">новинка</span>
         <h3>Приведи подругу</h3>
         <p>Вдвоём — приятнее. Бонусы для обеих</p>
-        <button onclick="orderPromo('Акция Приведи подругу')">
+        <button type="button" data-service="Акция «Приведи подругу»" onclick="openBooking(this)">
           Записаться
         </button>
       </div>
@@ -55,6 +55,7 @@
   </div>
 </section>
 
+<script src="/js/booking-modal.js" defer></script>
 <script src="/js/main.js" defer></script>
 
 </body>
