@@ -56,8 +56,12 @@
     </p>
 
     <div class="hero-actions">
-      <a href="tel:+79298380501" class="btn primary">Позвонить</a>
-      <a href="#form" class="btn outline">Записаться</a>
+      <button type="button" class="btn primary" data-service="процедуру" onclick="openBooking(this)">
+        Позвонить
+      </button>
+      <button type="button" class="btn outline" data-service="процедуру" onclick="openBooking(this)">
+        Записаться
+      </button>
     </div>
   </div>
 </section>
@@ -357,6 +361,7 @@
       class="booking-option"
     >📞 Позвонить</a>
 
+    <a href="#" class="booking-option max" id="maxLink">💬 Max</a>
     <a href="#" class="booking-option whatsapp" id="waLink">💬 WhatsApp</a>
     <a href="#" class="booking-option telegram" id="tgLink">✈️ Telegram</a>
 
