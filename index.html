@@ -26,18 +26,15 @@
     <nav class="nav" id="nav">
       <ul>
         <li><a href="/">Главная</a></li>
-        <li class="has-submenu">
-          <span>Услуги</span>
-          <ul class="submenu">
-            <li><a href="services/spa.html">SPA-программы</a></li>
-            <li><a href="services/face.html">Уход за лицом</a></li>
-            <li><a href="services/massage.html">Массаж тела</a></li>
-            <li><a href="services/group.html">Групповые занятия</a></li>
-            <li><a href="services/education.html">Обучение</a></li>
-          </ul>
-        </li>
-        <li><a href="certificates.html">Подарочные сертификаты</a></li>
-        <li><a href="promo.html">Акции</a></li>
+        <li><a href="services/spa-programs.html">SPA-программы</a></li>
+        <li><a href="services/face-programs.html">Уход за лицом</a></li>
+        <li><a href="services/massage-programs.html">Массаж тела</a></li>
+        <li><a href="services/bodycare-programs.html">Уход за телом</a></li>
+        <li><a href="services/course-programs.html">Курс массажа и коррекции фигуры</a></li>
+        <li><a href="services/group-programs.html">Групповые занятия</a></li>
+        <li><a href="services/education-programs.html">Обучение</a></li>
+        <li><a href="services/sertificate.html">Подарочные сертификаты</a></li>
+        <li><a href="services/soon.html">Акции</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
@@ -47,9 +44,9 @@
 <!-- ===== HERO ===== -->
 <section class="hero">
   <div class="container">
-    <h1>Пространство заботы<br>только для женщин</h1>
+    <h1>Студия релакса «Лаванда»<br>Красота и здоровье ручной работы</h1>
     <p class="hero-text">
-      Студия релакса «Лаванда» — это уют, безопасность и внимание к каждой детали.
+      Уют и внимание к каждой детали
     </p>
 
     <div class="hero-actions">
@@ -89,35 +86,41 @@
         <h3>SPA-программы</h3>
       </a>
 
-      <a href="face.html" class="service-card">
-        <div class="service-img" style="background-image:url('../img/services/face.jpg');"></div>
+      <a href="/services/face-programs.html" class="service-card">
+        <div class="service-img" style="background-image:url('../img/services/face/face.png');"></div>
         <h3>Уход за лицом</h3>
       </a>
 
-      <a href="massage-programs.html" class="service-card">
+      <a href="/services/massage-programs.html" class="service-card">
         <div class="service-img" style="background-image:url('/img/services/massage/massage.png');"></div>
         <h3>Массаж тела</h3>
       </a>
 
-      <a href="group.html" class="service-card">
-        <div class="service-img" style="background-image:url('../img/services/group.jpg');"></div>
+      <a href="/services/bodycare-programs.html" class="service-card">
+        <div class="service-img" style="background-image:url('../img/services/bodycare/bodycare.png');"></div>
         <h3>Уход за телом</h3>
       </a>
 
-      <a href="group.html" class="service-card">
-        <div class="service-img" style="background-image:url('../img/services/group.jpg');"></div>
-        <h3>Курсы массажа и коррекции фигуры</h3>
+      <a href="/services/course-programs.html" class="service-card">
+        <div class="service-img" style="background-image:url('../img/services/course/course.jpg');"></div>
+        <h3>Курс массажа и коррекции фигуры</h3>
       </a>
 
-      <a href="group.html" class="service-card">
-        <div class="service-img" style="background-image:url('../img/services/group.jpg');"></div>
+      <a href="/services/group-programs.html" class="service-card">
+        <div class="service-img" style="background-image:url('../img/services/group/group.png');"></div>
         <h3>Групповые занятия</h3>
       </a>
 
-      <a href="education.html" class="service-card">
-        <div class="service-img" style="background-image:url('../img/services/education.jpg');"></div>
+      <a href="/services/education-programs.html" class="service-card">
+        <div class="service-img" style="background-image:url('../img/services/education/education.png');"></div>
         <h3>Обучение</h3>
       </a>
+
+      <a href="/services/sertificate.html" class="service-card">
+        <div class="service-img" style="background-image:url('../img/services/sertificate/sertificate.png');"></div>
+        <h3>Подарочный сертификат</h3>
+      </a>
+
     </div>
   </div>
 </section>
@@ -128,23 +131,61 @@
 </section>
 
 <!-- ===== ADVANTAGES ===== -->
-<section class="advantages">
+<section class="advantages" id="advantages">
   <div class="container">
     <h2>Почему выбирают нас</h2>
 
-    <ul class="advantages-list">
-      <li>Только для женщин</li>
-      <li>Уютная атмосфера без спешки</li>
-      <li>Индивидуальный подход</li>
-      <li>Спокойное и безопасное пространство</li>
-    </ul>
+    <div class="advantages-grid">
+      <div class="adv-card js-reveal">
+        <img
+          src="/img/index/women.png"
+          width="200"
+          height="200"
+          alt="Только для женщин"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="adv-card js-reveal">
+        <img
+          src="/img/index/cozy.png"
+          width="200"
+          height="200"
+          alt="Уютная атмосфера без спешки"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="adv-card js-reveal">
+        <img
+          src="/img/index/care.png"
+          width="200"
+          height="200"
+          alt="Индивидуальный подход"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="adv-card js-reveal">
+        <img
+          src="/img/index/safe.png"
+          width="200"
+          height="200"
+          alt="Спокойное и безопасное пространство"
+          loading="lazy"
+        >
+      </div>
+    </div>
   </div>
 </section>
+
 
 <!-- ===== REVIEWS ===== -->
 <section class="reviews">
   <div class="container">
     <h2>Отзывы наших гостей</h2>
+
+    <iframe src="https://yandex.ru/sprav/widget/rating-badge/86927795966?type=award" width="150" height="50" frameborder="0"></iframe>
 
     <div class="reviews-grid">
       <div class="review-card">
@@ -307,25 +348,6 @@
 </section>
 
 
-
-
-<!-- ===== FORM ===== -->
-<section class="form-section" id="form">
-  <div class="container">
-    <h2>Запишитесь на услугу</h2>
-    <p>Оставьте свой номер и выберите услугу, мы свяжемся с вами в WhatsApp</p>
-
-    <form class="form" onsubmit="sendWhatsApp(event)">
-      <label for="service">Выберите услугу</label>
-      <input type="text" id="service" placeholder="Например: SPA-программы" required>
-
-      <label for="phone">Ваш телефон</label>
-      <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
-
-      <button type="submit" class="btn primary btn-large">Отправить в WhatsApp</button>
-    </form>
-  </div>
-</section>
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
   <div class="container">
@@ -347,7 +369,34 @@
 <script src="/js/booking-modal.js" defer></script>
 <script src="/js/main.js" defer></script>
 
+<!-- ИКОНКИ -->
+<script>
+  (function () {
+    const items = document.querySelectorAll('.js-reveal');
+    if (!items.length) return;
 
+    // Если браузер старый — просто показываем без анимации
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.15,
+      rootMargin: '0px 0px -10% 0px'
+    });
+
+    items.forEach(el => observer.observe(el));
+  })();
+</script>
 
 </body>
 </html>

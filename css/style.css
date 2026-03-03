@@ -1204,3 +1204,90 @@ section {
     font-size: 16px;
   }
 }
+
+/* ===== ADVANTAGES (ICON CARDS) ===== */
+.advantages {
+  padding: 70px 0;
+}
+
+.advantages h2 {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* телефон: 2 в ряд */
+  gap: 14px;
+}
+
+/* Карточка под иконку */
+.adv-card {
+  border-radius: 22px;
+  padding: 14px;
+  background: rgba(181, 155, 207, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Картинка адаптивная: занимает максимум места в карточке */
+.adv-card img {
+  width: 100%;
+  height: auto;
+  max-width: 240px; /* на телефоне будет меньше из-за ширины колонки */
+  object-fit: contain;
+}
+
+/* ПК/планшет: 4 в ряд, крупнее */
+@media (min-width: 768px) {
+  .advantages-grid {
+    grid-template-columns: repeat(4, 1fr); /* ПК: 4 в ряд */
+    gap: 18px;
+  }
+
+  .adv-card {
+    padding: 18px;
+  }
+
+  .adv-card img {
+    max-width: 320px; /* делаем крупнее */
+  }
+}
+
+/* ===== REVEAL ANIMATION ===== */
+.js-reveal {
+  opacity: 0;
+  transform: translateY(14px) scale(0.98);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
+}
+
+.js-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* уважение к настройке "уменьшить движение" */
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal,
+  .js-reveal.is-visible {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+
+/* Исправление полос в шапке */
+section.spa-hero {
+  padding: 0; /* Обнуляем отступы из 98-й строки */
+}
+
+.spa-hero img {
+  width: 100%;
+  height: 420px; 
+  display: block;
+  object-fit: cover; 
+}
+
